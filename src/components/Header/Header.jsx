@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Svg from '../Svg';
 import logo from '../../assets/logo.png';
+import logoBlack from '../../assets/logo-black.png';
 import './Header.scss';
 import { useLocation } from 'react-router-dom';
 
@@ -33,7 +34,7 @@ function Header() {
   return (
     <header className={`header flex justify-content-between ${background !== 'bg-transparent' && 'header__white'}`}>
         <div className="container flex justify-content-between align-items-center">
-            <img className='logo' src={logo} alt="Beauty Americas" />
+            <img className='logo' src={background === 'bg-transparent' ? logo : logoBlack} alt="Beauty Americas" />
             <Svg classes='menu' name='burger-menu' fill={background === 'bg-transparent' ? '#fff' : '#606060'}/>
         </div>
     </header>
