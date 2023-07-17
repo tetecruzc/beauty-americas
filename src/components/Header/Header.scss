@@ -33,6 +33,7 @@
         position: fixed;
         background-color: $color-secondary;
         box-shadow: 0px 0px 8px rgba(0,0,0,.6);
+        z-index: 9999999;
         .container{
             padding: 1rem 2rem;
         }
