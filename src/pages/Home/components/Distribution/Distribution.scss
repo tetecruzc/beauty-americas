@@ -23,6 +23,8 @@
         text-transform: uppercase;
         letter-spacing: 0.69px;
         font-size: 1.3rem;
+        cursor: pointer;
+        
         @include respond(lg){
             font-size: 1.1rem;
         }
@@ -36,6 +38,9 @@
         p{
             margin: 10px;
             text-align: center;
+            &:hover{
+                color: $color-primary;
+            }
         }
     }
     &__stores{

@@ -7,11 +7,12 @@
     justify-content: center;
     align-items: center;
     margin: 0 100px;
+    cursor: pointer;
 
     @include respond(lg){
         margin: 0 30px;
     }
-    
+
     @include respond(md){
         margin: 0 20px;
     }
@@ -27,8 +28,12 @@
     .logo{
         width: 300px;
         position: relative;
+        transition: all .3s;
         @include respond(md){
             width: 270px;
+        }
+        &:hover{
+            transform: scale(1.1);
         }
     }
 
