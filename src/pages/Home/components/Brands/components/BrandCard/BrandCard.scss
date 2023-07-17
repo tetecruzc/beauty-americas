@@ -1,0 +1,35 @@
+@import '../../../../../../styles/abstracts/mixins';
+
+.brand-card{
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+
+    @include respond(lg){
+        margin: 0 30px;
+    }
+    
+    @include respond(md){
+        margin: 0 20px;
+    }
+    
+    .background{
+        height: 100%;
+        position: absolute;
+        @include respond(md){
+            height: 80%;
+        }
+    }
+
+    .logo{
+        width: 300px;
+        position: relative;
+        @include respond(md){
+            width: 270px;
+        }
+    }
+
+}

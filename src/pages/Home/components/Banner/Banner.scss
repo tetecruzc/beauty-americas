@@ -1,0 +1,43 @@
+@import '../../../../styles/abstracts/mixins.scss';
+
+.banner{
+    height: 90vh;
+    width: 100%;
+    background-image: url(./assets/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include respond(sm){
+        height: 70vh;
+    }
+
+
+    .title{
+        text-align: center;
+        letter-spacing: 0px;
+        font-size: 4rem;
+        color: #FFFFFF;
+        // margin: auto;
+        // height: 100%;
+        padding: 5rem 4rem 0 4rem;        
+        font-family: 'IvyMode', sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        @include respond(sm){
+            padding: 4rem 2rem;
+            font-size: 2.6rem;
+        }
+    }
+
+    .decoration{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,50%);
+    }
+}

@@ -1,0 +1,13 @@
+@import '../../../../styles//abstracts/variables';
+@import '../../../../styles//abstracts/mixins';
+
+.brands{
+    padding: 7rem 4rem;
+    background-color: $color-secondary;
+    @include respond(sm){
+        padding: 7rem 2rem;
+    }
+    &__list{
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,36 @@
+@import '../../../../styles//abstracts/variables';
+@import '../../../../styles//abstracts/mixins';
+
+.why-us{
+    padding: 5rem 13rem;
+    background-color: $color-secondary;
+    @include respond(md){
+        padding: 5rem 8rem;
+    }
+    @include respond(sm){
+        padding: 5rem 2rem;
+    }
+    &__list{
+        margin-top: 4rem;
+        h3,p{
+            text-align: center;
+            color: $color-black;
+        }
+        h3{
+            font-size: 2rem;
+            font-weight: 400;
+            @include respond(sm){
+                font-size: 1.5rem;
+            }
+        }
+        p{
+            margin: 10px auto 30px auto;
+            font-weight: 100;
+            font-size: 1.2rem;
+            line-height: 30px;
+            @include respond(sm){
+                font-size: 1rem;
+            }
+        }
+    }
+}
