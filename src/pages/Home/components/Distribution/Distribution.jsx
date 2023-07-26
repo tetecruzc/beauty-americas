@@ -1,4 +1,4 @@
-import {React, useEffect} from 'react'
+import {React} from 'react'
 import './Distribution.scss'
 import venezuela from './assets/venezuela.png'
 import {DISTRIBUTION_CITIES, DISTRIBUTION_STORES} from './data/distribution'

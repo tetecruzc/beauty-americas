@@ -10,4 +10,29 @@
     &__list{
         margin-top: 4rem;
     }
+
+    &__list{
+        margin-top: 4rem;
+        h3,p{
+            text-align: center;
+            color: $color-black;
+        }
+        h3{
+            font-size: 2rem;
+            font-weight: 400;
+            @include respond(sm){
+                font-size: 1.5rem;
+            }
+        }
+        p{
+            margin: 10px auto 30px auto;
+            font-weight: 100;
+            font-size: 1.2rem;
+            line-height: 30px;
+            color: #8B0F0F;
+            @include respond(sm){
+                font-size: 1rem;
+            }
+        }
+    }
 }
